@@ -1,0 +1,260 @@
+ .background{height: 900px;
+            height: 1800px;
+            border-radius: 10px;
+            color: aliceblue;
+            background-color: #ca7c2e;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 0px;
+        }
+        .titre{height: 45px;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            border-radius: 10px;
+            position: fixed;
+           
+        }
+        .youtube{width: 20%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        background-color: red;
+    }
+        
+
+        .search{width: 60%;
+            height: 100%;
+            background-color: #333333;
+            display: flex;
+          
+
+        }
+        .recherche{height: 90%;
+            width: 80%;
+            border-radius: 20px;
+            background-color:rgba(128, 128, 128, 0.336);
+            
+            margin-left: 40px;
+            margin-top: 3px;
+        }
+        .voice{height: 90%;
+            width: 5%;
+            border-radius: 30px;
+            background-color: rgba(128, 128, 128, 0.336);
+            margin-left: 10px;
+              margin-top: 3px;
+        }
+        .sign{width: 20%;
+            height: 100%;
+            background-color: rgb(168, 24, 24);
+            border-top-right-radius: 10px;
+        }
+        .gwancorp{height: 400px;
+            width:1990px;
+         color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+           
+        }
+       
+body{display: flex;
+    flex-wrap: wrap;
+background-color: #333333;
+
+}
+.lesvideo{height: 1000px;
+    width: 1900px;
+    display: flex;
+    flex-wrap: wrap;
+background-color: #912222;
+gap: 20px;
+
+
+}
+.temp{height:45px;
+    width: 45px;
+    border-radius: 45px;
+    background-color: #7a4242;
+    align-self: center;
+   top: 350px;
+   left: 520px;
+   align-content: center;
+   text-align: center;
+    position:absolute;}
+    /*.menu{height: 1900px;
+        width: 100px;
+        background-color: #c01c1c;
+position: fixed;
+    }    */
+       
+       
+        .option{width: 2000px;
+            height: 30px;
+            background-color:#333333;
+            display: flex;
+            gap: 10px;
+            padding-top: 4px;
+            margin-top: 60px;
+
+        }
+        .op1{width:7% ;
+            height: 82%;
+            background-color: rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+            margin-left: 4px;
+            text-align: center;
+           align-content: center;
+        }
+        .op2{width:11% ;
+            height: 82%;
+            background-color: rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        .op3{width:20% ;
+            height: 82%;
+            background-color:rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        .op4{width:15% ;
+            height: 82%;
+            background-color:rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        .op5{width:21% ;
+            height: 82%;
+            background-color: rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             align-content: center;
+              text-align: center;
+        }
+        .op6{width:26% ;
+            height: 82%;
+            background-color: rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             align-content: center;
+              text-align: center;
+        }
+        .op7{width:9% ;
+            height: 82%;
+            background-color:rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        .op8{width:8% ;
+            height: 82%;
+            background-color:rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        .op9{width:18% ;
+            height: 82%;
+            background-color: rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             align-content: center;
+              text-align: center;
+        }
+        .op10{width:23% ;
+            height: 82%;
+            background-color:rgba(128, 128, 128, 0.336);
+            border-radius: 10px;
+             text-align: center;
+             align-content: center;
+        }
+        
+        .video{height: 380px;
+            width:560px;
+            min-height: 380px;
+            min-width: 560px;
+            border-radius: 20px;
+            background-color: #333333;
+            margin-top: 10px;
+            
+        }
+        
+    .via{height: 266px;
+        width: 560px;
+    margin: 0px;
+   border-radius: 20px;
+    background-color: #bb3232;
+}
+.video-image{height: 266px;
+            width: 560px;
+            border-radius: 20px;
+            object-fit: cover;
+            position: relative;
+}
+.image-profil{width: 50px;
+            height: 50px;
+            border-radius: 50px;
+          background-color: rgb(197, 168, 39);
+margin-right: 9px;
+        }
+         .profil{width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            object-fit: cover;}
+            p{margin: 0px;}
+    .info{height: 30%;
+        width: 100%;
+        background-color:#333333;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+      
+        
+    }
+    .tet-video-description{height: 100px;
+    width: 300px;}
+   .inf1{height: 100%;
+        width: 95%;
+}
+   .infoG{height: 100%;
+width: 80%;
+
+background-color: aliceblue;
+}
+
+    .logo{height: 35px;
+        width: 35px;
+        border-radius: 30px;
+        background-color: black;
+        margin-right: 10px;
+       
+        
+    }
+        
+    .videoshort{display: flex;
+        height: 540px;
+        width: 1800px;
+        background-color: #7a4242;
+        gap: 18px;
+        border-bottom-right-radius: 10px;
+        justify-content: center;
+    }
+    .shot{width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        background-color: rgba(21, 45, 59, 0.781);
+        margin-top: 10px;
+    }
+
+    .infpoint{margin-top: 30px;
+            display: flex;
+                            margin-left: 50px;
+                            height: 80px;
+                            width: 300px;
+                            border-radius: 20px;
+                            background-color: #333333;
+                            position: absolute;
+                            opacity: 1;
+
+                            }

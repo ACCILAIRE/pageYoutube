@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carte.com</title>
+   
+      <style>
+         .page{height: 300px;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+           flex-wrap: wrap;
+            flex-direction: row;
+            background-color: #100C08;
+        }
+        .sign{text-align: end;
+
+        }
+        .temp{height:45px;
+                width: 45px;
+                border-radius: 45px;
+                color: aliceblue;
+                align-self: center;
+                padding-top: 0px;
+                padding-left: 370px;
+                align-items: center;
+                text-align: center;
+                position:absolute;
+                justify-content: center;
+                display: flex;
+            }
+                
+
+                
+        .card{height: 300px;
+                    width: 420px;
+                    min-width: 400px;
+                    background-color: #100C08;
+                    border-radius: 20px;
+                  
+        }
+        .shorts{height: 500px;
+                    width: 200px;
+                    min-width: 190px;
+                    background-color:#100C08;
+                    border-top-left-radius: 20px;
+                     border-top-right-radius: 20px;
+                    margin-bottom: 25px;
+        }
+        .video-image{height: 200px;
+            width: 100%;
+           border-top-left-radius: 18px;
+           border-top-right-radius: 18px;
+            min-width: 100%;
+            object-fit: cover;
+            position: relative;
+            color: aliceblue;
+        }
+        .short-image{height: 420px;
+            width: 100%;
+           border-top-left-radius: 18px;
+           border-top-right-radius: 18px;
+            min-width: 100%;
+            object-fit: cover;
+            
+        }
+        .part2{height: 110px;
+            width: 100%;
+            background-color:#100C08;
+            display: flex;
+            color: aliceblue;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+        }
+    
+        
+                
+        
+        .part{height:70px;
+            width: 100%;
+            background-color:#100C08;
+            display: flex;
+            color: aliceblue;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+        }
+        .image-profil{width: 50px;
+            height: 50px;
+            border-radius: 50px;
+          background-color: #100C08;
+            margin-right: 5px;
+            
+        }
+        .profil{width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            object-fit: cover;}
+            p{margin: 0px;}
+            .menu{height: 2000px;
+                width:100px;
+                background-color: #100C08;
+position: fixed;
+top: 50px;
+left: 0px;
+            }
+
+           
+
+            .corp{display: flex;
+              
+            }
+            .tete{
+                width: 100%;
+                position: fixed;
+               top: 0px;
+                background-color: #100C08;
+                left: 0px;
+                z-index: 1;
+
+            }
+            .rech{display: flex;
+                width: 100%;
+                
+               top: 0px;
+                background-color: #100C08;
+
+            }
+            .youtube{height: 40px;
+                    width: 30%;
+                    min-width: 190px;
+                    background-color: #100C08;
+            }
+            .search{height: 45px;
+                width: 40%;
+                min-width: 10px;
+                    background-color:#100C08;
+                    flex: 1;
+                    display: flex;
+                    
+                    
+            }
+            .sign{height: 40px;
+                width: 30%;
+                background-color: #100C08;
+               
+            }
+          
+
+            
+            .option{display: flex;
+                    gap: 20px;
+                    margin-left: 150px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    top: 250px;
+                  
+            }
+            @media(max-width:1000px){
+                .op{
+                    display: none;
+                }
+              
+            }
+            .option > div {
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.336);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    margin: 5px 4px;
+    color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.option>div:hover{background-color: #673339;
+    cursor: pointer;
+
+}
+           
+        .short{height: 40px;
+            width: 1900px;
+            background-color:#100C08;
+
+        }
+       
+       .back{background-color: #100C08;
+        height: 20000px;
+      
+
+       }
+       input{height: 33px;
+        width:100%;
+        border-radius: 20px;
+        flex: 1;
+        margin-top: 3px;
+        background-color: #100C08;
+        border-color: aliceblue;
+       
+       }
+       input::placeholder{color: aliceblue;  
+                            padding-left: 5px;
+
+       }
+       .voice{height: 35px;
+        width: 35px;
+        border-radius: 35px;
+        background-color: rgb(155, 30, 30);
+     
+       margin-left: 2px;
+       min-width: 35px;
+       margin-right: 20px;
+       }
+       body{padding-top: 100px;
+padding-left: 200px;
+background-color: #100C08;
+       }
+       .notif{vertical-align:super;
+             
+
+       }
+      
+      
+      </style>
+</head>
+<body>
+    <div class="back">
+    <div class="tete">
+       <div class="rech">
+                <div class="youtube">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="search">
+                    
+                        <input type="text" placeholder="search"> 
+                  
+                   
+                </div>
+                 <div class="voice">
+                    <img src="logovoice.png" alt="">
+                 </div>
+                <div class="sign">
+                    <samp class="notif"></samp> 
+                    <img  src="sign.png" alt="">
+                </div>
+</div>
+<div class="op">
+            <div class="option">
+                <div >ALL</div>
+                <div >Music</div>
+                <div >African Music</div>
+                <div>Scorpion</div>
+                <div>Wendyyy</div>
+                <div>Baky</div>
+                <div>Technelogie</div>
+                <div>Accilaire</div>
+                <div>rap Creole</div>
+                <div>Mix</div>
+                <div >Mixes</div>
+                <div >Contemporary R&B</div>
+                <div >frenche hip hop Music</div>
+                <div >Live</div>
+                <div >Albums</div>
+                <div >Freestyle Rap</div>
+                <div >Comtenporary world</div>
+            </div>
+</div>
+    </div>
+
+    
+    <div class="corp">
+
+         
+        <div class="menu">
+            <div class="bwatmenu"><img src="aceuil.png" alt=""></div>
+            <div class="bwatmenu"><img src="Shortmenu.png" alt=""></div>
+            <div class="bwatmenu"><img src="Abonnement.png" alt=""></div>
+            <div class="bwatmenu"><img src="Vous.png" alt=""></div>
+            <div class="bwatmenu"><img src="Historique.png" alt=""></div>
+            
+        </div>
+
+           
+
+            <div class="page">
+                    <div class="card">
+                
+                        <img class="video-image" src="magicienbaky.webp" alt="">
+                        <div class="temp">3:35</div>
+                        <div class="part2">
+                        
+                            <div class="image-profil">
+                                <img class="profil" src="baky.webp" alt="">
+                            </div>
+                            <div class="tet-video-description">Non video a 
+                                <p>non page la</p>
+                                <p>kantite moun ki we ak renmen videyo a</p>
+                            </div>
+                         </div>   
+                    </div>
+                <div class="card">
+                    <img class="video-image" src="sponsorwendyyy.webp" alt="">
+                
+                <div class="temp">4:35</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="teddy.jpg" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="video-image" src="ronaldo.webp" alt="">
+                    <div class="temp">14:35</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="ronaldo.webp" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="video-image" src="mula.webp" alt="">
+                    <div class="temp">4:55</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="mula.webp" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="short">
+                    <img src="short.png" alt="">
+                </div>
+
+                <div class="shorts">
+                    <img class="short-image" src="vini.webp" alt="">
+                    <div class="part">
+            
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="yamal.webp" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="real.webp" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="baky.webp" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="oar2.avif" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="rema.avif" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="bigshow.avif" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts">
+                    <img class="short-image" src="dash.webp" alt="">
+                    <div class="part">
+                
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                    <img class="video-image" src="vanessa.webp" alt="">
+                    <div class="temp">4:15</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="vanessa.webp" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div class="card">
+                    <img class="video-image" src="toxic.webp" alt="">
+                    <div class="temp">4:35</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="toxic.webp" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="awoyo.jpg" alt="">
+                    <div class="temp">4:05</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="awoyo.jpg" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="gwobidon.avif" alt="">
+                    <div class="temp">3:05</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="gwobidon.avif" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="stan.webp" alt="">
+                    <div class="temp">4:25</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="stan.webp" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="teddy.jpg" alt="">
+                    <div class="temp">4:35</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="teddy.jpg" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="kitemale.avif" alt="">
+                    <div class="temp">3:31</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="kitemale.avif" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="video-image" src="troubleboy.avif" alt="">
+                    <div class="temp">4:45</div>
+                    <div class="part2">
+                        <div class="image-profil">
+                            <img class="profil" src="troubleboy.avif" alt="">
+                        </div>
+                        <div class="tet-video-description">Non video a 
+                            <p>non page la</p>
+                            <p>kantite moun ki we ak renmen videyo a</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                
+    </div>
+</div>
+</div>
+    
+</div>
+</body>
+</html>
